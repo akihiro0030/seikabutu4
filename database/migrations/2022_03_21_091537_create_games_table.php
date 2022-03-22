@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Schema;
     /**
      * Run the migrations.
      *
+     * 
      * @return void
      */
     public function up()
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Schema;
              $table->string('over-review')->nullable();
               $table->string('image',100)->nullable();
                $table->integer('price')->nullable();
-              $table->timestamp('release')->comment('発売日');
+              $table->timestamps();
         });
     }
 

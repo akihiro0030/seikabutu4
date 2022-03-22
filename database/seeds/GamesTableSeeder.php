@@ -13,10 +13,13 @@ class GamesTableSeeder extends Seeder
     {
          DB::table('games')->insert([
              'name'=>'ゲーム名',
+             'over-review'=>'本文',
              
         ]);
          DB::table('games')->insert([
              'name'=>'エラー',
+             'over-review'=>'エラー',
+             
         ]);          
         
         
