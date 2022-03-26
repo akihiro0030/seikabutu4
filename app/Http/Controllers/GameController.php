@@ -20,10 +20,12 @@ public function create()
     return view('/show')->with(['game' => $game]);
 }
 
+
 public function store(Request $request, Game $game)
 {
     $input = $request['game'];
     $game->fill($input)->save();
     return redirect('/games/' . $game->id);
 }
+
 }

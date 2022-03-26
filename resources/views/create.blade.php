@@ -8,13 +8,15 @@
         <h1>Game Blog</h1>
         <form action="/games" method="POST">
            @csrf
-            <div class="name">
+             <div class="name">
                 <h2>name</h2>
                 <input type="text" name="game[name]" placeholder="ゲーム名"/>
             </div>
-                <div class="over-review">
-                <h2>over_review</h2>
-                <textarea name="game[over-review]" placeholder="ゲームの内容を入力してください"></textarea>
+                
+              <div class="price">  
+               <input type="text" name="game[price]" placeholder="価格"/>
+            </div>
+            </div>
             </div>
             <input type="submit" value="保存"/>
         </form>

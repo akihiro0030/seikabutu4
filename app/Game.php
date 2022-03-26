@@ -8,6 +8,6 @@ class Game extends Model
 {
     protected $fillable = [
     'name',
-    'over-review',
+    'price',
 ];
 }

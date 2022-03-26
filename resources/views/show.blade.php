@@ -9,11 +9,20 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-        <h1 class="name">
-        
-        </div>
-        <div class="footer">
-            <a href="/">戻る</a>
+     <h1>Blog Name</h1>
+     
+   <div style="text-arign: center"></div>
+                   <div class='games'>
+                    <h2 class='title'>
+                   
+                    
+                    <h2 class='name'>{{ $game->name }}</h2>
+                    <p class='price'>{{ $game->price}}</p>
+                </div>
+                    <p class='over_review'>{{ $game->over_review}}</p>
+                </div>
+                </div>
+             <div class="back">[<a href="/">back</a>]</div>
         </div>
     </body>
 </html>
