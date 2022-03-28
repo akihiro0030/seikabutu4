@@ -8,16 +8,15 @@
     </head>
     <body>
         <h1>Blog Name</h1>
-        <hrader>最近発売されたゲーム一覧</hrader>
         <div class='games'>
-            @foreach 
-            
-                
+            @foreach ($games as $game)
+                <div class='games'>
                     <h2 class='title'>
-                    <a href="/games/{{ $game->id }}">{{ $game->name }}</a></h2>
-                     <h2 class='name'>{{ $game->name }}</h2>
-                    
-              
+    <a href="/games/{{ $game->id }}">{{ $game->title }}</a>
+</h2>
+                    <h2 class='name'>{{ $game->name }}</h2>
+                    <p class='over_review'>{{ $game->over_review}}</p>
+                </div>
             @endforeach
         </div>
     </body>
