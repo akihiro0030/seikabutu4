@@ -8,16 +8,19 @@
     </head>
     <body>
         <h1>Blog Name</h1>
+        <div style="text-align: center">
         <div class='games'>
             @foreach ($games as $game)
-                <div class='games'>
-                    <h2 class='title'>
-    <a href="/games/{{ $game->id }}">{{ $game->title }}</a>
+                <div class='game'>
+                    <h2 class='names'>
+                    <a href="/games/{{ $game->id }}">{{ $game->name }}</a>
+                    
 </h2>
-                    <h2 class='name'>{{ $game->name }}</h2>
-                    <p class='over_review'>{{ $game->over_review}}</p>
+                    
+                   
                 </div>
             @endforeach
+            </div>
         </div>
     </body>
 </html>

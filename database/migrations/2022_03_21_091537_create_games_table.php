@@ -17,10 +17,11 @@ use Illuminate\Support\Facades\Schema;
         Schema::create('games', function (Blueprint $table) {
             $table->bigIncrements('id');
              $table->string('name')->comment('ゲーム名');
-             $table->string('over-review')->nullable();
+             $table->string('over_review');
               $table->string('image',100)->nullable();
-               $table->integer('price')->nullable();
+               $table->integer('price');
               $table->timestamps();
+               $table->string('zyannr');
         });
     }
 
