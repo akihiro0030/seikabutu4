@@ -14,7 +14,7 @@ class AddCategoryIdToGamesTable extends Migration
     public function up()
     {
         Schema::table('games', function (Blueprint $table) {
-              $table->integer('category_id')->unsigned(); 
+              $table->integer('Game')->unsigned(); 
         });
     }
 
