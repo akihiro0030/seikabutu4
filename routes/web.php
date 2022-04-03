@@ -16,3 +16,4 @@ Route::get('/create', 'GameController@create');
 Route::get('/games/{game}', 'GameController@show');
 Route::post('/games', 'GameController@store');
 Route::get('/search', 'GameController@search');
+Route::get('/categor/{category_id}', 'CategoryController@index');

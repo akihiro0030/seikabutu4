@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Schema;
               $table->string('image',100)->nullable();
                $table->integer('price');
               $table->timestamps();
-               $table->string('zyannr');
+              
         });
     }
 

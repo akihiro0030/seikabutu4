@@ -2,13 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>Blog</title>
+        
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     
-        <h1>Blog Name</h1>
+       
         <div class="col-sm-4" style="padding:20px 0; padding-left:0px;">
              <form class="form-inline" action="{{url('/search')}}">
               <div class="form-group">
@@ -26,9 +26,9 @@
     
     <div class='category'>
         <ul>
-        @foreach ($categories as $category)
+        @foreach ($games as $game)
          
-        <a href="/category/{{$category->id}}">{{$category->name}}<a/>
+        <a href="/category/{{$game->category->id}}">{{$game->category->name}}<a/>
         
         
         @endforeach

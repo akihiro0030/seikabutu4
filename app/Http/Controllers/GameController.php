@@ -9,13 +9,14 @@ use App\Category;
 
 class GameController extends Controller
 {
-    public function index(Game $game)
+   public function index(Game $game, Category $category)
+    {   
+        return view('index')->with(['games'=>$game->get(), 'categories'=>$category->get()]);
+    }
+
+    public function create(Category $category)
     {
-        return view('index')->with(['games'=>$game->get()]);
-    } 
-    public function create()
-    {
-        return view('/create');
+        return view('/create')->with(['categories'=> $category->get()]);
     }
     public function show(Game $game)
     {
@@ -26,6 +27,7 @@ class GameController extends Controller
     public function store(Request $request, Game $game)
 {
     $input = $request['game'];
+    
     $game->fill($input)->save();
     return redirect('/games/' . $game->id);
 }
@@ -49,6 +51,8 @@ class GameController extends Controller
 
 
 }
-   
+
+
+  
 }
 

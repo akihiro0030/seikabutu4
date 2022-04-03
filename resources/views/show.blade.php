@@ -14,10 +14,10 @@
            <h2 class='name'>{{$game->name}}</h2>
            <p class='over_review'>{{$game->over_review}}</p>
            <p class='price'>{{$game->price}}</p>
-           <p class='zyannr'>{{$game->zyannr}}</p>
-           </div>
+            <p class='category_name'>{{$game->category->name}}</p>
           <div class="footer">
               <a href="/games">戻る</a>
+              
           </div>
     </body>
 </html>
