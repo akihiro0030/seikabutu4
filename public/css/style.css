@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+header{background: #ff838b;}
+.contentA{background: #b3d874;}
+.contentB{background: #6fb5ff;}
+footer{background: #ffce5b;}
+
+.contentA{
+ width: 30%;
+ height: 1000px;
+}
+.contentB{
+     width: 90%;
+ height: 1000px;
+    
+}
+.main{
+ display: flex;
+}

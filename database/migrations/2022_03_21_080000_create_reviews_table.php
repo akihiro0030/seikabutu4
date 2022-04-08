@@ -18,7 +18,7 @@ class CreateReviewsTable extends Migration
        $table->string('tittle');
        $table->unsignedBigInteger('user_id')->default(0);
        $table->unsignedBigInteger('game_id')->default(0);
-       $table->integer('stars')->default(0);
+       $table->integer('rated')->default(0);
         });
     }
 

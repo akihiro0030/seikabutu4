@@ -16,12 +16,14 @@ class CreatereviwcommentsTable extends Migration
         Schema::create('review_comments', function (Blueprint $table) {
             
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('reviw_id')->default(0);
+            $table->unsignedBigInteger('game_id')->default(0);
             $table->unsignedBigInteger('user_id')->default(0);
+            
             $table->string('tittle');
-            $table->string('body',300);
-            $table->integer('stars')->default(0);
+              $table->string('body')->default(0);
+            $table->integer('rate')->default(0);
             $table->timestamps();
+            
         });
     }
            

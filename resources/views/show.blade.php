@@ -18,6 +18,13 @@
           <div class="footer">
               <a href="/games">戻る</a>
               
+            <a href="/games/{{$game->id}}/review/create">レビューする</a>  
           </div>
+            @foreach($game->Review_comments as $Review_comment)
+            <div class'reviewes'>
+               <h2 class='tittle'>{{ $Review_comment->tittle}}</h2> 
+                <p class='body'>{{$Review_comment->body}}</p>
+            </div>
+            @endforeach
     </body>
 </html>

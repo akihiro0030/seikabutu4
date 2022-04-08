@@ -18,7 +18,7 @@ class GameController extends Controller
     {
         return view('/create')->with(['categories'=> $category->get()]);
     }
-    public function show(Game $game)
+    public function show(Game $game )
     {
         return view('/show')->with(['game' => $game]);
     }
